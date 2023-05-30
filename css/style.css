@@ -17,4 +17,47 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 10.8rem 85vh 15.4rem repeat(7, min-content);
+  grid-template-columns: repeat(12, minmax(12rem, 1fr));
+}
+
+.contact__us {
+  background-color: lightblue;
+}
+
+.footer {
+  background-color: lightcoral;
+}
+
+.header {
+  background-color: red;
+  grid-column: 1/-1;
+}
+
+.insurance {
+  background-color: thistle;
+}
+
+.services {
+  background-color: brown;
+}
+
+.sponsor {
+  background-color: magenta;
+}
+
+.testimonials {
+  background-color: aqua;
+}
+
+.why__us {
+  background-color: blue;
+}
+
+.hero {
+  background-color: slategrey;
+}
+
 /*# sourceMappingURL=style.css.map */
