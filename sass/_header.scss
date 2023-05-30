@@ -1,5 +1,54 @@
 .header {
-  background-color: red;
-
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+
+      & > li:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+
+    &__item {
+      cursor: pointer;
+    }
+
+    &__link:visited,
+    &__link:link {
+      text-decoration: none;
+      font-weight: 500;
+      color: #141b2b;
+    }
+  }
+}
+
+.nav__btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1.2rem 3.2rem;
+    background-color: rgba(#e77e49, 0.1);
+    border-radius: 7.3rem;
+    color: #e77e49;
+    font-weight: 500;
+    transition: all 0.25s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba(#e77e49, 0.2);
+  }
 }

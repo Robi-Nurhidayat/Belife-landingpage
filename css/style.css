@@ -32,8 +32,47 @@ body {
 }
 
 .header {
-  background-color: red;
   grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header .nav__list > li:not(:last-child) {
+  margin-right: 3rem;
+}
+.header .nav__item {
+  cursor: pointer;
+}
+.header .nav__link:visited, .header .nav__link:link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141b2b;
+}
+
+.nav__btn:link, .nav__btn:visited {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.2rem 3.2rem;
+  background-color: rgba(231, 126, 73, 0.1);
+  border-radius: 7.3rem;
+  color: #e77e49;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+.nav__btn:hover, .nav__btn:active {
+  background-color: rgba(231, 126, 73, 0.2);
 }
 
 .insurance {
