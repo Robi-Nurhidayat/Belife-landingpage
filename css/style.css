@@ -19,16 +19,18 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10.8rem 85vh 15.4rem repeat(7, min-content);
+  grid-template-rows: 10.8rem 85vh min-content repeat(7, min-content);
   grid-template-columns: repeat(12, minmax(12rem, 1fr));
 }
 
 .contact__us {
   background-color: lightblue;
+  grid-column: 2/span 10;
 }
 
 .footer {
   background-color: lightcoral;
+  grid-column: 2/span 10;
 }
 
 .header {
@@ -77,26 +79,112 @@ body {
 
 .insurance {
   background-color: thistle;
+  grid-column: 2/span 10;
 }
 
 .services {
-  background-color: brown;
+  grid-column: 1/span 12;
+  grid-row: 3/4;
+  margin: 12rem 0;
+}
+.services__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services__card {
+  width: 28.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.15);
+  padding: 3.6rem 2.6rem 2.6rem 2.6rem;
+}
+.services__card:not(:last-child) {
+  margin-right: 3.1rem;
+}
+.services__icon {
+  width: 15.5rem;
+  height: 15.5rem;
+  background-color: rgba(255, 229, 207, 0.15);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+.services__heading-4 {
+  margin-bottom: 2rem;
+}
+.services p {
+  color: #848484;
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+.services__btn:link, .services__btn:visited {
+  width: 23.5rem;
+  background-color: rgba(231, 126, 73, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.2rem 7.3rem;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  color: #e77e49;
+  font-weight: 500;
 }
 
 .sponsor {
   background-color: magenta;
+  height: 10%;
+  grid-column: 2/span 10;
+  grid-row: 2/3;
+  transform: translateY(100%);
 }
 
 .testimonials {
   background-color: aqua;
+  grid-column: 2/span 10;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+  color: #141b2b;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.heading-3 {
+  color: #e77e49;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .why__us {
   background-color: blue;
+  grid-column: 2/span 10;
 }
 
 .hero {
-  background-color: slategrey;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background-color: #0d326b;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero__img {
+  width: 100%;
+}
+.u-margin-8 {
+  margin-bottom: 0.8rem;
+}
+
+.u-margin-56 {
+  margin-bottom: 5.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
