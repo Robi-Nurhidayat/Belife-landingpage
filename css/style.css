@@ -19,8 +19,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10.8rem 85vh min-content repeat(7, min-content);
-  grid-template-columns: repeat(12, minmax(12rem, 1fr));
+  grid-template-rows: 10.8rem min-content;
+  grid-template-columns: repeat(12, minmax(min-content, 1fr));
 }
 
 .contact__us {
@@ -84,16 +84,18 @@ body {
 
 .services {
   grid-column: 1/span 12;
-  grid-row: 3/4;
   margin: 12rem 0;
+  padding: 0 9.9rem;
 }
 .services__box {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28.7rem, min-content));
+  gap: 3.1rem;
   justify-content: center;
 }
 .services__card {
-  width: 28.7rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,12 +109,23 @@ body {
 .services__icon {
   width: 15.5rem;
   height: 15.5rem;
-  background-color: rgba(255, 229, 207, 0.15);
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3.2rem;
+}
+.services__icon--1 {
+  background-color: rgba(255, 229, 207, 0.15);
+}
+.services__icon--2 {
+  background-color: rgba(0, 137, 142, 0.1);
+}
+.services__icon--3 {
+  background-color: rgba(255, 211, 58, 0.1);
+}
+.services__icon--4 {
+  background-color: rgba(74, 142, 241, 0.1);
 }
 .services__heading-4 {
   margin-bottom: 2rem;
@@ -133,6 +146,11 @@ body {
   display: inline-block;
   color: #e77e49;
   font-weight: 500;
+  transition: all 0.3s;
+}
+.services__btn:active, .services__btn:hover {
+  color: #fff;
+  background-color: #e77e49;
 }
 
 .sponsor {
