@@ -15,6 +15,7 @@ body {
   font-size: 1.6rem;
   line-height: 3rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -170,7 +171,6 @@ body {
   font-size: 3.6rem;
   color: #141b2b;
   font-weight: 700;
-  text-align: center;
   text-transform: capitalize;
 }
 
@@ -178,13 +178,51 @@ body {
   color: #e77e49;
   font-weight: 600;
   font-size: 2rem;
-  text-align: center;
   text-transform: capitalize;
 }
 
 .why__us {
-  background-color: blue;
-  grid-column: 2/span 10;
+  grid-column: 1/-1;
+  margin-top: 12rem;
+  padding: 0 9.9rem;
+}
+.why__us__container {
+  padding: 6rem 6.3rem 6rem 6rem;
+  display: grid;
+  grid-template-columns: 41.5rem 2fr;
+}
+.why__us__btn__container {
+  display: flex;
+  align-items: center;
+}
+
+.offer-btn {
+  background-color: #e77e49;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7.3rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.offer-btn img {
+  margin-left: 6px;
+}
+
+.offer-btn--right {
+  margin-left: 1.2rem;
+  background-color: #fff;
+  color: #848484;
+  border-radius: 0;
+}
+
+.offer-btn--right:hover {
+  background-color: #848484;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .hero {
@@ -201,8 +239,16 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.u-margin-20 {
+  margin-bottom: 2rem;
+}
+
 .u-margin-56 {
   margin-bottom: 5.6rem;
+}
+
+.u-text-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
