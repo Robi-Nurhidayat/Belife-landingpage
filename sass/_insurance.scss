@@ -1,4 +1,80 @@
 .insurance {
-  background-color: thistle;
-  grid-column: 2 / span 10;
+  grid-column: 1 / -1;
+  padding: 12rem 10rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(59.1rem, 1fr) minmax(50rem, 1fr)
+    );
+    column-gap: 14.9rem;
+
+    align-items: center;
+  }
+
+  &__left {
+    p {
+      color: #848484;
+    }
+  }
+
+  &__right {
+    height: 56rem;
+    object-fit: cover;
+
+    // overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 51%;
+      border-top-right-radius: 51%;
+      border-bottom-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+    }
+  }
+
+  &__joined {
+    position: absolute;
+    bottom: 3rem;
+    left: -8rem;
+    z-index: 1000;
+    padding: 2.6rem;
+    background-color: #fff;
+
+    display: grid;
+    grid-column: repeat(2, 1fr);
+    border-radius: 100px;
+    border: 1px solid red;
+
+    &--photos {
+      margin-right: 4px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      // > * {
+      //   margin-right: 20px;
+      // }
+    }
+
+    img {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      border: 4px solid red;
+      border-radius: 50%;
+      // margin-left: 20px;
+      // margin-left: 10px;
+
+      &:not(:last-child) {
+      }
+    }
+
+    p span {
+      color: #e77e49;
+    }
+  }
 }
