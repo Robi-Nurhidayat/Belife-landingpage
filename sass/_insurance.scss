@@ -1,6 +1,7 @@
 .insurance {
   grid-column: 1 / -1;
   padding: 12rem 10rem;
+  background-color: #fafafa;
 
   &__container {
     display: grid;
@@ -11,6 +12,7 @@
     column-gap: 14.9rem;
 
     align-items: center;
+    background-color: inherit;
   }
 
   &__left {
@@ -40,39 +42,63 @@
     position: absolute;
     bottom: 3rem;
     left: -8rem;
+
     z-index: 1000;
     padding: 2.6rem;
     background-color: #fff;
 
-    display: grid;
-    grid-column: repeat(2, 1fr);
     border-radius: 100px;
-    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.09);
 
     &--photos {
       margin-right: 4px;
       display: flex;
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
       align-items: center;
 
       // > * {
       //   margin-right: 20px;
       // }
+
+      &-1 {
+        margin-left: -17px;
+      }
+      &-2 {
+        margin-left: -17px;
+        z-index: -2;
+      }
+      &-3 {
+        margin-left: -17px;
+        z-index: -3;
+      }
+      &-4 {
+        margin-left: -17px;
+        z-index: -4;
+      }
+
+      &-5 {
+        margin-left: -17px;
+        z-index: -5;
+      }
     }
 
     img {
       display: inline-block;
       width: 4rem;
       height: 4rem;
-      border: 4px solid red;
+      border: 4px solid #fafafa;
       border-radius: 50%;
+      object-fit: cover;
       // margin-left: 20px;
       // margin-left: 10px;
-
-      &:not(:last-child) {
-      }
     }
 
+    p {
+      color: #848484;
+    }
     p span {
       color: #e77e49;
     }

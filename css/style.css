@@ -81,12 +81,14 @@ body {
 .insurance {
   grid-column: 1/-1;
   padding: 12rem 10rem;
+  background-color: #fafafa;
 }
 .insurance__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(59.1rem, 1fr) minmax(50rem, 1fr));
   column-gap: 14.9rem;
   align-items: center;
+  background-color: inherit;
 }
 .insurance__left p {
   color: #848484;
@@ -111,23 +113,45 @@ body {
   z-index: 1000;
   padding: 2.6rem;
   background-color: #fff;
-  display: grid;
-  grid-column: repeat(2, 1fr);
   border-radius: 100px;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.09);
 }
 .insurance__joined--photos {
   margin-right: 4px;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
+}
+.insurance__joined--photos-1 {
+  margin-left: -17px;
+}
+.insurance__joined--photos-2 {
+  margin-left: -17px;
+  z-index: -2;
+}
+.insurance__joined--photos-3 {
+  margin-left: -17px;
+  z-index: -3;
+}
+.insurance__joined--photos-4 {
+  margin-left: -17px;
+  z-index: -4;
+}
+.insurance__joined--photos-5 {
+  margin-left: -17px;
+  z-index: -5;
 }
 .insurance__joined img {
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  border: 4px solid red;
+  border: 4px solid #fafafa;
   border-radius: 50%;
+  object-fit: cover;
+}
+.insurance__joined p {
+  color: #848484;
 }
 .insurance__joined p span {
   color: #e77e49;
